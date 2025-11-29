@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "skyblock_chat_notifier",
+  "version": "${version}",
+  "name": "Skyblock Chat Notifier",
+  "description": "Show a title on your screen whenever a specific piece of text is shown in chat.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/skyblock_chat_notifier/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.tgreenhagen.skyblock_chat_notifier.client.Skyblock_chat_notifierDataGenerator"
+    ],
+    "client": [
+      "com.tgreenhagen.skyblock_chat_notifier.client.Skyblock_chat_notifierClient"
+    ],
+    "main": [
+      "com.tgreenhagen.skyblock_chat_notifier.Skyblock_chat_notifier"
+    ],
+    "modmenu": [
+      "com.tgreenhagen.skyblock_chat_notifier.client.config.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
