@@ -5,6 +5,10 @@ A simple mod that lets you create titles triggered by chat messages.
 1. Simply add a trigger (make sure it matches the exact text shown in chat except for colors)
 2. See title on your screen whenever that text shows up in chat!
 
+**Downloads**
+[CurseForge](https://legacy.curseforge.com/minecraft/mc-mods/skyblock-chat-notifier)
+[Modrinth](https://modrinth.com/mod/sbcn)
+
 ---
 
 *Example (Whenever the text "Trigger text" appears in chat "Message on screen" would appear in the center of the screen)*
