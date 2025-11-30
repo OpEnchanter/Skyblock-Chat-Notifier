@@ -107,6 +107,7 @@ public class TitleTriggerList extends AbstractConfigListEntry<List<TriggerPatter
                         rowHeight - 2,
                         Text.literal("Trigger")
                 );
+                triggerField.setMaxLength(1024);
                 triggerField.setText(pattern.trigger);
 
                 TextFieldWidget messageField = new TextFieldWidget(
@@ -117,6 +118,7 @@ public class TitleTriggerList extends AbstractConfigListEntry<List<TriggerPatter
                         rowHeight - 2,
                         Text.literal("Message")
                 );
+                messageField.setMaxLength(1024);
                 messageField.setText(pattern.message);
 
                 CheckboxWidget checkbox = CheckboxWidget.builder(Text.literal(""), client.textRenderer)
@@ -162,6 +164,9 @@ public class TitleTriggerList extends AbstractConfigListEntry<List<TriggerPatter
 
                 rowY += rowHeight;
             }
+
+            addNewButton.setPosition((entryWidth - 80) / 2, y + (value.size() * rowHeight) + 16);
+            removeLastButton.setPosition((entryWidth - 80) / 2 + 82, y + (value.size() * rowHeight) + 16);
         }
 
 

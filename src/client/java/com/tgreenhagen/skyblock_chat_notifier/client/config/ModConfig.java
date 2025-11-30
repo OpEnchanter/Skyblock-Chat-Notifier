@@ -7,5 +7,6 @@ import java.util.List;
 
 public class ModConfig {
     public boolean enabled = true;
+    public boolean hypixelOnly = true;
     public List<TriggerPattern> triggers;
 }

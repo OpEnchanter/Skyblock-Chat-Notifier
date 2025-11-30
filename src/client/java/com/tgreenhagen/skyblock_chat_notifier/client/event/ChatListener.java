@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 
+import java.util.Objects;
+
 public class ChatListener {
     public static void register() {
         ClientReceiveMessageEvents.GAME.register((message, overlay) -> {
